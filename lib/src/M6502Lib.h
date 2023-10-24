@@ -155,7 +155,7 @@ struct CPU
                 Word SubAddr = FetchWord(Cycles, memory);
                 memory.WriteWord(PC - 1, SP, Cycles);
 
-                SP+=2;
+                SP += 2;
                 PC = SubAddr;
                 Cycles--;
             }
